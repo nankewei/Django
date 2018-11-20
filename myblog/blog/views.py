@@ -52,3 +52,10 @@ def tag(request, pk):
     tag = get_object_or_404(Tag, pk=pk)
     article_list = Article.objects.filter(tags=tag).order_by("-created_time")
     return render(request, "blog/index.html", {"article_list": article_list})
+
+
+def about(request):
+    article_list = Article.objects.all().order_by("-created_time")
+    return render(request, "blog/about.html", {
+        "article_list": article_list,
+    })

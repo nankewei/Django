@@ -8,4 +8,6 @@ urlpatterns = [
     path("archives/<int:year>/<int:month>", views.archives, name="archives"),
     path("category/<int:pk>",views.category,name="category"),
     path("tag/<int:pk>",views.tag,name="tag"),
+    path("about",views.about,name="about")
+    
 ]

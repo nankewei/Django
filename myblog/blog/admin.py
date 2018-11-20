@@ -6,3 +6,4 @@ class ArticleAdmin(admin.ModelAdmin):
 admin.site.register(Article,ArticleAdmin)
 admin.site.register(Tag)
 admin.site.register(Category)
+admin.site.register(Author)
